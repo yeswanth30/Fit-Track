@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/MyAccount">
+
+    <fragment
+        android:id="@+id/MyAccount"
+        android:name="com.fitness.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_MyAccount_to_MyProfile"
+            app:destination="@id/MyProfile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MyProfile"
+        android:name="com.fitness.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" >
+
+        <action
+            android:id="@+id/action_MyProfile_to_OrderHistory"
+            app:destination="@id/OrderHistory" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/OrderHistory"
+        android:name="com.fitness.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>

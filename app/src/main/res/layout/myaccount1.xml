@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/payment_history_item.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Your existing LinearLayout for payment details -->
+    <LinearLayout
+        android:id="@+id/paymentDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Your existing TextViews for payment details -->
+        <TextView
+            android:id="@+id/paymentIdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="Payment ID" />
+
+
+        <TextView
+            android:id="@+id/productIdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="Product ID" />
+
+        <TextView
+            android:id="@+id/productIdTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="Product name" />
+
+        <TextView
+            android:id="@+id/productIdTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="Price" />
+    </LinearLayout>
+
+    <!-- New TextView added below the existing LinearLayout -->
+<!--    <TextView-->
+<!--        android:id="@+id/newTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:text="TOTAL:"-->
+<!--        android:layout_below="@id/paymentDetailsLayout"-->
+<!--        android:layout_centerHorizontal="true" />-->
+</RelativeLayout>

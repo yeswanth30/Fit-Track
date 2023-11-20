@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".products">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Products"
+                android:textColor="#E75480"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/viewbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:backgroundTint="#E75480"
+                android:gravity="center"
+                android:text="View Bag"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerView"
+            android:layout_height="match_parent"/>
+
+
+
+
+<!--        <TableLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:padding="16dp"-->
+<!--        android:stretchColumns="*">-->
+
+<!--        <TableRow>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="Product 1"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/gymbag" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="Product 2"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/shaker" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="Product 3"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/protien" />-->
+<!--        </TableRow>-->
+
+
+<!--        <TableRow>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Bag" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/text3"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="shaker" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/text5"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text=" protien" />-->
+<!--        </TableRow>-->
+
+<!--        <TableRow>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text2"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="500/-" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/text4"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="250/-" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text6"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="1500/-" />-->
+<!--        </TableRow>-->
+<!--            <TableRow>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/add"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Add" />-->
+
+
+<!--                <Button-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Add" />-->
+<!--                <Button-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Add" />-->
+<!--            </TableRow>-->
+
+
+<!--            <TableRow>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="Product 1"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/dumble" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="Product 2"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/gymglove" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="Product 3"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/cycle" />-->
+<!--        </TableRow>-->
+
+
+<!--        <TableRow>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text7"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text=" Dumbles" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/text9"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Gloves" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/text11"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Cycle" />-->
+<!--        </TableRow>-->
+
+
+<!--        <TableRow>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text8"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="2000/-" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text10"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="300/-" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/text12"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="5000/-" />-->
+<!--        </TableRow>-->
+<!--            <TableRow>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Add" />-->
+
+<!--                <Button-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Add" />-->
+<!--                <Button-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Add" />-->
+<!--            </TableRow>-->
+
+<!--        <TableRow>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="Product 1"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/mat" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="Product 2"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/shoes" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="Product 3"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/homegym" />-->
+<!--        </TableRow>-->
+
+
+<!--        <TableRow>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text13"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Mat" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/text15"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Shoes" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/text17"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Home Gym" />-->
+<!--        </TableRow>-->
+
+
+<!--        <TableRow>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text14"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="500/-" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/text16"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="6000/-" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/text18"-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="10000/-" />-->
+<!--        </TableRow>-->
+<!--            <TableRow><Button-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Add" /><Button-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Add" /><Button-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Add" />-->
+<!--            </TableRow>-->
+
+
+
+<!--        </TableLayout>-->
+
+
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
